@@ -2,7 +2,7 @@ interface FoodsDataSource {
     fun getFoodList(): List<FoodsModel>
 }
 
-class FoodsDataSourceImp(): FoodsDataSource{
+class FoodsDataSourceImp: FoodsDataSource{
     override fun getFoodList(): List<FoodsModel> {
         return listOf(
             FoodsModel(
@@ -27,5 +27,4 @@ class FoodsDataSourceImp(): FoodsDataSource{
             )
         )
     }
-
 }
