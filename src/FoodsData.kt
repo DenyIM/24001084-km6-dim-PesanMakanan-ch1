@@ -10,28 +10,7 @@ abstract class FoodsData: UserInterface{
     protected var method : Int = -1
 
 
-    protected val foodsData = listOf(
-        FoodsModel(
-            foodName = "Ayam Bakar",
-            foodPrice = 50000.0
-        ),
-        FoodsModel(
-            foodName = "Ayam Goreng",
-            foodPrice = 40000.0
-        ),
-        FoodsModel(
-            foodName = "Ayam Geprek",
-            foodPrice = 40000.0
-        ),
-        FoodsModel(
-            foodName = "Kulit Ayam Crispy",
-            foodPrice = 15000.0
-        ),
-        FoodsModel(
-            foodName = "Sate Usus Ayam",
-            foodPrice = 5000.0
-        )
-    )
+    protected val foodsData = FoodsDataSourceImp().getFoodList()
 
     //SOLID Principle: S = Single Responsibility
     abstract fun printMenu(creatorName: String = "Deny Iqbal Mubarok")
