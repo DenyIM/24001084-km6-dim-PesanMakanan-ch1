@@ -8,8 +8,6 @@ abstract class FoodsData: UserInterface{
     protected var answer : Int = -1
     protected var payment: Double? = null
     protected var method : Int = -1
-
-
     protected val foodsData = FoodsDataSourceImp().getFoodList()
 
     //SOLID Principle: S = Single Responsibility
